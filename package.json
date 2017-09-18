@@ -1,0 +1,32 @@
+{
+  "name": "pgdebug",
+  "version": "1.0.2",
+  "description": "Produce a set of intermediate queries from input SQL to generate intermediate result sets",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "find test -maxdepth 1 -type f -print0 | xargs -0L1 node index.js -f && echo \"Tests passed.\""
+  },
+  "homepage": "http://korban.net/postgres/pgdebug/",
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/SupremumLimit/pgdebug.git"
+  },
+  "author": "Alex Korban",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^4.0.7",
+    "command-line-usage": "^4.0.1",
+    "node-jq": "^0.7.0",
+    "pg-query-parser": "^0.2.1",
+    "ramda": "^0.24.1"
+  },
+  "keywords": [
+    "sql",
+    "postgres",
+    "postgresql",
+    "pg",
+    "query",
+    "database"
+  ]
+}
